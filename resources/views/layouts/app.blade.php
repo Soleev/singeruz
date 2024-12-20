@@ -77,9 +77,10 @@
                                         <ul class="m-subdropdown">
                                             @foreach($categories as $category)
                                                 <li class="m-subdropdown-item">
-                                                    <a class="m-subdropdown-link" href="{{ url($category->slug) }}">
+                                                    <a class="m-subdropdown-link" href="{{ url('/catalog/' . $category->slug) }}">
                                                         {{ $category->title }}
                                                     </a>
+
                                                 </li>
                                             @endforeach
                                         </ul>

@@ -1,3 +1,8 @@
 <?php
 
-use App\Models\Category;
+namespace App\Http\Controllers;
+
+abstract class Controller
+{
+    //
+}

@@ -8187,7 +8187,10 @@ body.loaded:after {
 .product-box .product-img .product-badge-right {
   right: 16px
 }
-
+.product-box .product-img .product-badge-left.gold,
+.product-box .product-img .product-badge-right.gold {
+    background-color: goldenrod;
+}
 .product-box .product-title {
   position: relative;
   padding: 20px 24px 0 0

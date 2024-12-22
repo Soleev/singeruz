@@ -264,7 +264,7 @@
                         <div class="product-badge-left">
                             <span class="font-small uppercase font-family-secondary fw-medium">Новинка</span>
                         </div>
-                        <div class="product-badge-right red">
+                        <div class="product-badge-right gold">
                             <span class="font-small uppercase font-family-secondary fw-medium">Золото</span>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
                         <div class="product-badge-left">
                             <span class="font-small uppercase font-family-secondary fw-medium">Новинка</span>
                         </div>
-                        <div class="product-badge-right red">
+                        <div class="product-badge-right gold">
                             <span class="font-small uppercase font-family-secondary fw-medium">Золото</span>
                         </div>
                     </div>
@@ -307,7 +307,7 @@
                         <div class="product-badge-left">
                             <span class="font-small uppercase font-family-secondary fw-medium">Новинка</span>
                         </div>
-                        <div class="product-badge-right red">
+                        <div class="product-badge-right gold">
                             <span class="font-small uppercase font-family-secondary fw-medium">Золото</span>
                         </div>
                     </div>
@@ -329,7 +329,7 @@
                         <div class="product-badge-left">
                             <span class="font-small uppercase font-family-secondary fw-medium">Новинка</span>
                         </div>
-                        <div class="product-badge-right red">
+                        <div class="product-badge-right gold">
                             <span class="font-small uppercase font-family-secondary fw-medium">Золото</span>
                         </div>
                     </div>
@@ -350,7 +350,7 @@
                         <div class="product-badge-left">
                             <span class="font-small uppercase font-family-secondary fw-medium">Новинка</span>
                         </div>
-                        <div class="product-badge-right red">
+                        <div class="product-badge-right gold">
                             <span class="font-small uppercase font-family-secondary fw-medium">Золото</span>
                         </div>
                     </div>
@@ -365,7 +365,7 @@
                 </div>
             </div><!-- end owl-carousel -->
             <div class="text-center mt-5">
-                <a class="button button-lg button-gray button-rounded" href="/gold-catalog">Посмотреть все</a>
+                <a class="button button-lg button-gray button-rounded" href="/golden">Посмотреть все</a>
             </div>
         </div><!-- end container -->
     </div>

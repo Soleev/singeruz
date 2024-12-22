@@ -87,7 +87,7 @@
                                 </li>
                             @endforeach
                             <li class="m-dropdown-item">
-                                <a class="m-dropdown-link" href="../catalog">Все категории</a>
+                                <a class="m-dropdown-link" href="/catalog">Все категории</a>
                             </li>
                         </ul>
                     </li>

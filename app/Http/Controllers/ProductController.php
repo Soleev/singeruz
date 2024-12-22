@@ -1,13 +1,7 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-use App\Models\Product; // Импорт модели Product
-
-// Убедитесь, что этот импорт есть:
-use App\Http\Controllers\Controller;
-
+use App\Models\Product;
 class ProductController extends Controller
 {
     // Метод для вывода продуктов категории по слагу
@@ -16,24 +10,18 @@ class ProductController extends Controller
         // Получаем все продукты с данным родителем
         $products = Product::where('parent', $parentSlug)->get();
         $rowsCount = $products->count();
-
-        // Определяем описание родительской категории
+        // Определяем описание родительской категории из той же таблицы
         $parent_desc = $this->getParentDesc($parentSlug);
-
         // Передаем в представление данные
         return view('pages.category', compact('products', 'rowsCount', 'parent_desc'));
     }
-
-    // Метод для получения описания категории (например, может быть из базы или хардкод)
+    // Метод для получения описания категории из таблицы 'products'
     private function getParentDesc($parentSlug)
     {
-        // Это можно заменить на реальный запрос к базе или заранее подготовленные данные
-        $descriptions = [
-            'igly' => 'Игольные изделия',
-            'zapchasti' => 'Запчасти для машин',
-            'oborudovanie' => 'Оборудование для производства',
-        ];
+        // Находим первое совпадение по parent
+        $product = Product::where('parent', $parentSlug)->first();
 
-        return $descriptions[$parentSlug] ?? 'Описание категории не найдено';
+        // Если продукт с таким parent существует, возвращаем описание
+        return $product ? $product->parent_desc : ' Описание категории не найдено';
     }
 }

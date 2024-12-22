@@ -1,8 +1,6 @@
 @extends('layouts.app')
-
-@section('title', 'Продукты категории ' . $parent_desc)
+@section('title', 'Продукты категории '. $parent_desc)
 @section('description', 'Описание')
-
 @section('content')
     <!-- Products section -->
     <div class="section">
@@ -29,22 +27,27 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="product-box">
                             <div class="product-img">
-                                <a href="{{ url('product-single/' . $product->id) }}">
-                                    <img src="{{ asset('assets/images/product/' . $product->img) }}" alt="{{ $product->title }}">
+                                <a href="{{ url($product->id) }}">
+                                    <img src="{{ asset('assets/images/product/' . $product->img) }}"
+                                         alt="{{ $product->title }}">
                                     @if ($product->img2)
-                                        <img src="{{ asset('assets/images/product/' . $product->img2) }}" alt="{{ $product->title }}">
+                                        <img src="{{ asset('assets/images/product/' . $product->img2) }}"
+                                             alt="{{ $product->title }}">
                                     @endif
                                 </a>
                                 <div class="product-badge-left">
-                                    <span class="font-small uppercase font-family-secondary fw-medium">Новинка</span>
+                                    <span class="font-small uppercase font-family-secondary fw-medium">
+                                        {{ $product->category->parent ?? 'Категория не найдена' }}
+                                    </span>
                                 </div>
                                 <div class="product-badge-right red">
-                                    <span class="font-small uppercase font-family-secondary fw-medium">Для швейного</span>
+                                    <span
+                                        class="font-small uppercase font-family-secondary fw-medium">{{ $product->parent_desc }}</span>
                                 </div>
                             </div>
                             <div class="product-title">
                                 <h6 class="fw-medium">
-                                    <a href="{{ url('product-single/' . $product->id) }}">{{ $product->title }}</a>
+                                    <a href="{{ url($product->id) }}">{{ $product->title }}</a>
                                 </h6>
                                 <div class="add-to-wishlist">
                                     <a href="#"><i class="far fa-heart"></i></a>

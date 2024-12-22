@@ -35,4 +35,10 @@ class Product extends Model
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
+    // Связь с моделью Category
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'parent', 'slug'); // 'parent' в products связан с 'slug' в categories
+    }
 }
+

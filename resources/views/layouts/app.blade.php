@@ -94,6 +94,9 @@
                     <li class="m-item">
                         <a class="m-link" href="/contacts">Контакты</a>
                     </li>
+                    <li class="m-item">
+                        <a class="m-link" href="/news">Новости</a>
+                    </li>
                 </ul>
                 <!-- Extra -->
                 <div class="header-menu-extra">

@@ -15,3 +15,4 @@ Route::get('/catalog/{parentSlug}', [ProductController::class, 'showCategoryProd
 // Маршрут для отображения продукта по id
 Route::get('/catalog/{parentSlug}/{id}', [ProductController::class, 'showSingleProduct']);
 Route::get('/golden', [GoldProductController::class, 'showGoldProducts']);
+Route::get('/news', function () {return view('pages.news');});

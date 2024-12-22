@@ -27,7 +27,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="product-box">
                             <div class="product-img">
-                                <a href="{{ url($product->id) }}">
+                                <a href="{{ url('/catalog/'.$product->category->slug.'/' .$product->id) }}">
                                     <img src="{{ asset('assets/images/product/' . $product->img) }}"
                                          alt="{{ $product->title }}">
                                     @if ($product->img2)
@@ -47,7 +47,7 @@
                             </div>
                             <div class="product-title">
                                 <h6 class="fw-medium">
-                                    <a href="{{ url($product->id) }}">{{ $product->title }}</a>
+                                    <a href="{{ url('/catalog/'.$product->category->slug.'/' .$product->id) }}">{{ $product->title }}</a>
                                 </h6>
                                 <div class="add-to-wishlist">
                                     <a href="#"><i class="far fa-heart"></i></a>

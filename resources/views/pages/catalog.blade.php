@@ -26,12 +26,12 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="product-box">
                             <div class="product-img">
-                                <a href="{{ url('product-single/' . $product->id) }}">
+                                <a href="{{ url('/catalog/'.$product->category->slug.'/' .$product->id) }}">
                                     <img src="{{ asset('assets/images/product/' . $product->img) }}"
-                                         alt="{{ $product->title }}">
-                                    @isset($product->img2)
+                                         width="640" height="360" loading="lazy" alt="{{ $product->title }}">
+                                    @if(!empty($product->img2))
                                         <img src="{{ asset('assets/images/product/' . $product->img2) }}"
-                                             alt="{{ $product->title }}">
+                                             width="640" height="360" loading="lazy" alt="{{ $product->title }}">
                                     @endisset
                                 </a>
                                 <div class="product-badge-left">
@@ -39,23 +39,23 @@
                                         {{ $product->category->parent ?? 'Категория не найдена' }}
                                     </span>
                                 </div>
-                                <div class="product-badge-right red">
-                                    <span
-                                        class="font-small uppercase font-family-secondary fw-medium">{{ $product->parent_desc }}
+                                <div class=" product-badge-right red">
+                                        <span
+                                            class="font-small uppercase font-family-secondary fw-medium">{{ $product->parent_desc }}
                                     </span>
-                                </div>
                             </div>
-                            <div class="product-title">
-                                <h6 class="fw-medium">
-                                    <a href="{{ url('product-single/' . $product->id) }}">{{ $product->title }}</a>
-                                </h6>
-                                <div class="add-to-wishlist">
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                </div>
+                        </div>
+                        <div class="product-title">
+                            <h6 class="fw-medium">
+                                <a href="{{ url('/catalog/'.$product->category->slug.'/' .$product->id) }}">{{ $product->title }}</a>
+                            </h6>
+                            <div class="add-to-wishlist">
+                                <a href="#"><i class="far fa-heart"></i></a>
                             </div>
                         </div>
                     </div>
-                @endforeach
+            </div>
+            @endforeach
             </div><!-- end row -->
         </div><!-- end container -->
     </div>

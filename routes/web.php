@@ -7,10 +7,9 @@ use App\Http\Controllers\CatalogController;
 
 Route::get('/', function () {return view('pages.home');});
 Route::get('/contacts', function () {return view('pages.contacts');});
-
-
-Route::get('/catalog/{parentSlug}', [ProductController::class, 'showCategoryProducts']);
-
-
 // Маршрут для отображения всех продуктов
-Route::get('/catalog', [CatalogController::class, 'showAllProducts'])->name('catalog.all');
+Route::get('/catalog', [CatalogController::class, 'showAllProducts']);
+// Маршрут для отображения продукта по категориям
+Route::get('/catalog/{parentSlug}', [ProductController::class, 'showCategoryProducts']);
+// Маршрут для отображения продукта по id
+Route::get('/catalog/{parentSlug}/{id}', [ProductController::class, 'showSingleProduct']);

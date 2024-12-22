@@ -2,6 +2,28 @@
 <html lang="ru">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@yield('title') | Singeruz</title>
+    <meta name="description" content="@yield('description')">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="@yield('canonical', url()->current())">
+
+    <!-- Favicon -->
+    <link href="/assets/images/favicon.png" rel="shortcut icon">
+    <!-- CSS -->
+    <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/plugins/magnific-popup/magnific-popup.min.css" rel="stylesheet">
+    <link href="/assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="/assets/plugins/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
+    <link href="/assets/plugins/justified-gallery/justified-gallery.min.css" rel="stylesheet">
+    <link href="/assets/plugins/sal/sal.min.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <!-- Fonts/Icons -->
+    <link href="/assets/plugins/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="/assets/plugins/font-awesome/css/all.css" rel="stylesheet">
+    <link href="/assets/plugins/themify/themify-icons.min.css" rel="stylesheet">
+    <link href="/assets/plugins/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSDMS1KNF2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -14,28 +36,6 @@
 
         gtag('config', 'G-ZSDMS1KNF2');
     </script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>@yield('title') | Singeruz</title>
-    <meta name="description" content="@yield('description')">
-    <!-- Canonical URL -->
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-    <!-- Favicon -->
-    <link href="../assets/images/favicon.png" rel="shortcut icon">
-    <!-- CSS -->
-    <link href="../assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/plugins/magnific-popup/magnific-popup.min.css" rel="stylesheet">
-    <link href="../assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
-    <link href="../assets/plugins/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
-    <link href="../assets/plugins/justified-gallery/justified-gallery.min.css" rel="stylesheet">
-    <link href="../assets/plugins/sal/sal.min.css" rel="stylesheet">
-    <link href="../assets/css/main.css" rel="stylesheet">
-    <!-- Fonts/Icons -->
-    <link href="../assets/plugins/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="../assets/plugins/font-awesome/css/all.css" rel="stylesheet">
-    <link href="../assets/plugins/themify/themify-icons.min.css" rel="stylesheet">
-    <link href="../assets/plugins/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 </head>
 
 <body data-preloader="3">
@@ -57,7 +57,7 @@
         <div class="container-fluid">
             <div class="logo">
                 <a href="/">
-                    <img class="logo-dark" src="../assets/images/logo.jpg" alt="лого singeruz">
+                    <img class="logo-dark" src="/assets/images/logo.jpg" width="271" height="52" alt="лого singeruz">
                 </a>
             </div>
             <div class="header-menu-wrapper">
@@ -92,7 +92,7 @@
                         </ul>
                     </li>
                     <li class="m-item">
-                        <a class="m-link" href="../contacts">Контакты</a>
+                        <a class="m-link" href="/contacts">Контакты</a>
                     </li>
                 </ul>
                 <!-- Extra -->
@@ -128,7 +128,7 @@
                     <h6 class="fw-normal mb-lg-3">О нас</h6>
                     <ul class="list-dash">
                         <li><a href="#">Партнеры</a></li>
-                        <li><a href="../contacts.php">Контакты</a></li>
+                        <li><a href="/contacts">Контакты</a></li>
                         <li><a href="#">Команда</a></li>
                         <li><a href="#">Услуги</a></li>
                     </ul>
@@ -189,11 +189,11 @@
 </div><!-- end wrapper -->
 
 <!-- ***** JAVASCRIPTS ***** -->
-<script src="../assets/plugins/jquery.min.js"></script>
+<script src="/assets/plugins/jquery.min.js"></script>
 
-<script src=""></script>
-<script src="../assets/plugins/plugins.js"></script>
-<script src="../assets/js/functions.min.js"></script>
+<script src="/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/plugins/plugins.js"></script>
+<script src="/assets/js/functions.min.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,17 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 class ProductController extends Controller
 {
+    public function showSingleProduct($parentSlug, $id)
+    {
+        // Получаем продукт по id
+        $product = Product::findOrFail($id);
+
+        // Дополнительно можно загрузить описание категории или другие данные
+        $parent_desc = $product->parent_desc;  // Предположим, что поле "parent_desc" есть в таблице "products"
+
+        // Отправляем данные в представление
+        return view('pages.product', compact('product', 'parentSlug', 'parent_desc'));
+    }
     // Метод для вывода продуктов категории по слагу
     public function showCategoryProducts($parentSlug)
     {

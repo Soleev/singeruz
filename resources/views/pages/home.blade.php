@@ -344,7 +344,7 @@
                 <!-- Carousel Item 5 -->
                 <div class="product-box">
                     <div class="product-img">
-                        <a href="/catalog/plastina/191">
+                        <a href="/catalog/igloderjately/191">
                             <img src="../assets/images/product/j87иглодержателKG142.jpg" alt="">
                         </a>
                         <div class="product-badge-left">
@@ -356,7 +356,7 @@
                     </div>
                     <div class="product-title">
                         <h6 class="fw-medium">
-                            <a href="/catalog/plastina/191">Иглодержатель KG142</a>
+                            <a href="/catalog/igloderjately/191">Иглодержатель KG142</a>
                         </h6>
                         <div class="add-to-wishlist">
                             <a href="#"><i class="far fa-heart"></i></a>

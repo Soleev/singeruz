@@ -25,7 +25,7 @@
                         <div class="fancy-box-1 margin-bottom-30" style="position: relative; overflow: hidden;">
                             <a href="#" style="display: block; position: relative;">
                                 <!-- Видео -->
-                                <video src="/assets/video/0656.mp4" autoplay muted loop playsinline style="width: 100%; height: auto;"></video>
+                                <video src="/assets/video/0656.mov" autoplay muted loop playsinline style="width: 100%; height: auto;"></video>
 
                                                                 <!-- Контент -->
                                 <div class="content top-right font-small font-family-secondary uppercase" style="position: absolute; top: 10px; right: 10px; z-index: 3;">

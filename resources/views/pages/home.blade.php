@@ -291,7 +291,7 @@
                     </div>
                     <div class="product-title">
                         <h6 class="fw-medium">
-                            <a href="/catalog/plastina/211">Петлитель 257550</a>
+                            <a href="/catalog/petlitel/211">Петлитель 257550</a>
                         </h6>
                         <div class="add-to-wishlist">
                             <a href="#"><i class="far fa-heart"></i></a>
@@ -301,7 +301,7 @@
                 <!-- Carousel Item 3 -->
                 <div class="product-box">
                     <div class="product-img">
-                        <a href="/catalog/plastina/204">
+                        <a href="/catalog/petlitel/204">
                             <img src="/assets/images/product/j257лапка257321-5.6.jpg" alt="">
                         </a>
                         <div class="product-badge-left">

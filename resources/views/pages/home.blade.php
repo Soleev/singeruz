@@ -279,7 +279,7 @@
                 <!-- Carousel Item 2 -->
                 <div class="product-box">
                     <div class="product-img">
-                        <a href="/catalog/plastina/211">
+                        <a href="/catalog/petlitel/211">
                             <img src="../assets/images/product/j188петлитель257550.jpg" alt="">
                         </a>
                         <div class="product-badge-left">

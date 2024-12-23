@@ -26,7 +26,7 @@
                             <a href="#" style="display: block; position: relative;">
                                 <!-- Видео -->
                                 <video
-                                    src="/assets/video/0656.mp4"
+                                    src="/assets/video/0656.mov"
                                     autoplay
                                     muted
                                     loop
